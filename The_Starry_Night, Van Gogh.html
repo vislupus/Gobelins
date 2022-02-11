@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            height: 10px;
+            background-color: gainsboro;
+        }
+
+        th,
+        td {
+            padding: 5px 0px 5px 15px;
+            text-align: left;
+            font-size: 18px;
+            font-family: sans-serif;
+            vertical-align: center;
+        }
+
+        tr:hover {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <table sortable="" id="closest-colors">
+        <thead>
+            <tr>
+                <th class="swatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>Номер</th>
+                <th>DMC име</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: #000000;"></td>
+                <td>310</td>
+                <td><a>Black</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #424242;"></td>
+                <td>3799</td>
+                <td><a>Pewter Gray Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #384c5e;"></td>
+                <td>3750</td>
+                <td><a>Antique Blue Very Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #13477d;"></td>
+                <td>797</td>
+                <td><a>Royal Blue</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #60678c;"></td>
+                <td>3807</td>
+                <td><a>Cornflower Blue</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #4f4b41;"></td>
+                <td>3021</td>
+                <td><a>Brown Gray Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #3e85a2;"></td>
+                <td>3760</td>
+                <td><a>Wedgewood Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #455c71;"></td>
+                <td>930</td>
+                <td><a>Antique Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #555b7b;"></td>
+                <td>792</td>
+                <td><a>Cornflower Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #739fc1;"></td>
+                <td>334</td>
+                <td><a>Baby Blue Medium</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #90c0b4;"></td>
+                <td>993</td>
+                <td><a>Aquamarine Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #464563;"></td>
+                <td>791</td>
+                <td><a>Cornflower Blue V D</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #466a8e;"></td>
+                <td>798</td>
+                <td><a>Delft Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #4f93a7;"></td>
+                <td>518</td>
+                <td><a>Wedgewood Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #5a8fb8;"></td>
+                <td>322</td>
+                <td><a>Baby Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b9d7c0;"></td>
+                <td>966</td>
+                <td><a>Jade Ultra Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #5b9071;"></td>
+                <td>502</td>
+                <td><a>Blue Green</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #707da2;"></td>
+                <td>793</td>
+                <td><a>Cornflower Blue Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #748eb6;"></td>
+                <td>799</td>
+                <td><a>Delft Blue Medium</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #484848;"></td>
+                <td>844</td>
+                <td><a>Beaver Gray Ult Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #253b73;"></td>
+                <td>336</td>
+                <td><a>Navy Blue</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #6b9ebf;"></td>
+                <td>826</td>
+                <td><a>Blue Medium</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #7eb1c8;"></td>
+                <td>519</td>
+                <td><a>Sky Blue</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #64abba;"></td>
+                <td>807</td>
+                <td><a>Peacock Blue</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #3d95a5;"></td>
+                <td>806</td>
+                <td><a>Peacock Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #044d33;"></td>
+                <td>500</td>
+                <td><a>Blue Green Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b2d4bd;"></td>
+                <td>3813</td>
+                <td><a>Blue Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #508b7d;"></td>
+                <td>3814</td>
+                <td><a>Aquamarine</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #c7d1db;"></td>
+                <td>3752</td>
+                <td><a>Antique Blue Very Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #d7edcc;"></td>
+                <td>369</td>
+                <td><a>Pistachio Green Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #2c6a45;"></td>
+                <td>561</td>
+                <td><a>Celadon Green VD</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #7bac94;"></td>
+                <td>503</td>
+                <td><a>Blue Green Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #c4cdac;"></td>
+                <td>524</td>
+                <td><a>Fern Green Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #53976a;"></td>
+                <td>562</td>
+                <td><a>Jade Medium</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ada7c7;"></td>
+                <td>340</td>
+                <td><a>Blue Violet Medium</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ababab;"></td>
+                <td>318</td>
+                <td><a>Steel Gray Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #657f7f;"></td>
+                <td>3768</td>
+                <td><a>Gray Green Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #e4ecd4;"></td>
+                <td>772</td>
+                <td><a>Yellow Green Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #88ba91;"></td>
+                <td>954</td>
+                <td><a>Nile Green</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #174923;"></td>
+                <td>890</td>
+                <td><a>Pistachio Grn Ult V D</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #8c8c8c;"></td>
+                <td>414</td>
+                <td><a>Steel Gray Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #6e655c;"></td>
+                <td>645</td>
+                <td><a>Beaver Gray Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #1b2853;"></td>
+                <td>939</td>
+                <td><a>Navy Blue Very Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #a7cdaf;"></td>
+                <td>564</td>
+                <td><a>Jade Very Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #c4decc;"></td>
+                <td>504</td>
+                <td><a>Blue Green Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #a2b5c6;"></td>
+                <td>932</td>
+                <td><a>Antique Blue Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #11416d;"></td>
+                <td>796</td>
+                <td><a>Royal Blue Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #0e365c;"></td>
+                <td>820</td>
+                <td><a>Royal Blue Very Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b7bfdd;"></td>
+                <td>341</td>
+                <td><a>Blue Violet Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #a2d6ad;"></td>
+                <td>955</td>
+                <td><a>Nile Green Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #a49878;"></td>
+                <td>642</td>
+                <td><a>Beige Gray Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #205f2e;"></td>
+                <td>319</td>
+                <td><a>Pistachio Grn Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffc840;"></td>
+                <td>725</td>
+                <td><a>Topaz Med Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #566a6a;"></td>
+                <td>924</td>
+                <td><a>Gray Green Vy Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #477b6e;"></td>
+                <td>991</td>
+                <td><a>Aquamarine Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #625d50;"></td>
+                <td>3787</td>
+                <td><a>Brown Gray Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #a6c298;"></td>
+                <td>368</td>
+                <td><a>Pistachio Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #dde3e3;"></td>
+                <td>928</td>
+                <td><a>Gray Green Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffe300;"></td>
+                <td>973</td>
+                <td><a>Canary Bright</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fff1af;"></td>
+                <td>727</td>
+                <td><a>Topaz Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b8d2e6;"></td>
+                <td>3325</td>
+                <td><a>Baby Blue Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #6fae9f;"></td>
+                <td>992</td>
+                <td><a>Aquamarine Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fffde3;"></td>
+                <td>3823</td>
+                <td><a>Yellow Ultra Pale</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #e7d6c1;"></td>
+                <td>3047</td>
+                <td><a>Yellow Beige Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #d8e498;"></td>
+                <td>472</td>
+                <td><a>Avocado Grn U Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b39f8b;"></td>
+                <td>3032</td>
+                <td><a>Mocha Brown Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #65a57d;"></td>
+                <td>3816</td>
+                <td><a>Celadon Green</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #666d4f;"></td>
+                <td>520</td>
+                <td><a>Fern Green Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ccd9b1;"></td>
+                <td>3348</td>
+                <td><a>Yellow Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fded54;"></td>
+                <td>307</td>
+                <td><a>Lemon</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #187e56;"></td>
+                <td>910</td>
+                <td><a>Emerald Green Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ebeae7;"></td>
+                <td>3024</td>
+                <td><a>Brown Gray Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #abb197;"></td>
+                <td>523</td>
+                <td><a>Fern Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ececec;"></td>
+                <td>762</td>
+                <td><a>Pearl Gray Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #d9ebf1;"></td>
+                <td>775</td>
+                <td><a>Baby Blue Very Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #acd8e2;"></td>
+                <td>3761</td>
+                <td><a>Sky Blue Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fed376;"></td>
+                <td>743</td>
+                <td><a>Yellow Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #bddded;"></td>
+                <td>827</td>
+                <td><a>Blue Very Light</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #e0e868;"></td>
+                <td>3819</td>
+                <td><a>Moss Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #396f52;"></td>
+                <td>501</td>
+                <td><a>Blue Green Dark</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #4b3c2a;"></td>
+                <td>3031</td>
+                <td><a>Mocha Brown Vy Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #b9b982;"></td>
+                <td>3013</td>
+                <td><a>Khaki Green Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #5e6b47;"></td>
+                <td>3362</td>
+                <td><a>Pine Green Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #969e7e;"></td>
+                <td>522</td>
+                <td><a>Fern Green</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #8da675;"></td>
+                <td>989</td>
+                <td><a>Forest Green </a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #fcfcee;"></td>
+                <td>746</td>
+                <td><a>Off White</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #69885a;"></td>
+                <td>320</td>
+                <td><a>Pistachio Green Med</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #eefcfc;"></td>
+                <td>3756</td>
+                <td><a>Baby Blue Ult Vy Lt</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #5f6648;"></td>
+                <td>3051</td>
+                <td><a>Green Gray Dk</a></td>
+            </tr>
+            <tr>
+                <td style="background-color: #c7c077;"></td>
+                <td>734</td>
+                <td><a>Olive Green Lt</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body></html>

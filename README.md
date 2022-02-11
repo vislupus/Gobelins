@@ -1,2 +1,3 @@
 # Gobelins
-Cross-stitch ideas
+ - https://en.wikipedia.org/wiki/Cross-stitch
+ - https://en.wikipedia.org/wiki/Gobelin
